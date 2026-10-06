@@ -1,7 +1,7 @@
 // ============================================================
 // CONFIG: change this one line to point at your FastAPI backend
 // ============================================================
-const API_URL = "http://127.0.0.1:8000/predict";
+const API_URL = "https://mansik-santulan-score-4-hlwi.onrender.com";
 
 // Highest possible score, used to draw the gauge (change if your model uses a different scale)
 const MAX_SCORE = 10;
