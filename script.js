@@ -1,50 +1,45 @@
 // ============================================================
 // CONFIG: change this one line to point at your FastAPI backend
 // ============================================================
-const API_URL = "https://mansik-santulan-score-4-hlwi.onrender.com";
 
-// Highest possible score, used to draw the gauge (change if your model uses a different scale)
-const MAX_SCORE = 10;
+// Highest possible score, used to draw the gauge (change if your model uses a different scale)const MAX_SCORE = 10;
 
 // ---------- Field definitions ----------
 // key = JSON key sent to the backend (also the form field's name/id)
-
-  const NUMBER_FIELDS = {
+   const API_URL = "https://mansik-santulan-score-4-hlwi.onrender.com/predict";
+   const MAX_SCORE = 10;
+   
+const NUMBER_FIELDS = {
   age: {
     label: "Age",
     min: 13,
     max: 60,
     unit: ""
   },
-
   avg_daily_usage_hours: {
     label: "Screen time",
     min: 0,
     max: 24,
     unit: " h/day"
   },
-
   daily_unlocks: {
     label: "Phone unlocks",
     min: 0,
     max: 500,
     unit: "/day"
   },
-
   study_hours: {
     label: "Study hours",
     min: 0,
     max: 24,
     unit: " h/day"
   },
-
   sleep_hours_per_night: {
     label: "Sleep hours",
     min: 0,
     max: 24,
     unit: " h/night"
   },
-
   physical_activity_hours: {
     label: "Physical activity",
     min: 0,
@@ -52,6 +47,8 @@ const MAX_SCORE = 10;
     unit: " h/day"
   }
 };
+
+  
 const TEXT_FIELDS = {
   gender:             "Please choose a gender.",
   country:            "Please enter your country.",

@@ -59,7 +59,7 @@ def greet():
 
 
 # Prediction route
-@app.post("/predict", response_model=PredictionResponse)
+@app.post("/predict",response_model=PredictionResponse)
 def predict(data: StudentData):
 
     input_row = pd.DataFrame([{
